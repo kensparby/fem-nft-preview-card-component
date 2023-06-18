@@ -38,6 +38,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [https://ken.sparby.dev/](https://ken.sparby.dev/)
+- Twitter - [@kensparby](https://www.twitter.com/kensparby)
+- Frontend Mentor - [@ksparb](https://www.frontendmentor.io/profile/ksparb)
