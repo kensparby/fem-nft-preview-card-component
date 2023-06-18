@@ -35,9 +35,4 @@ h6 {
 a {
   color: $clr-white;
   text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
 }

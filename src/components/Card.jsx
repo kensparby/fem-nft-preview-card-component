@@ -1,5 +1,4 @@
 import "./Card.scss";
-import Image from "../assets/images/image-equilibrium.jpg";
 import EthIcon from "../assets/images/icon-ethereum.svg";
 import ClockIcon from "../assets/images/icon-clock.svg";
 import CreatorImage from "../assets/images/image-avatar.png";
@@ -8,9 +7,9 @@ function Card() {
   return (
     <>
       <div className="Card">
-        <img alt="" src={Image} />
+        <div className="image-preview"></div>
         <div className="card-content">
-          <h3>Equilibrium #3429</h3>
+          <a href="#">Equilibrium #3429</a>
           <p>Our Equilibrium collection promotes balance and calm.</p>
           <div className="details">
             <p className="details__eth">
@@ -22,10 +21,12 @@ function Card() {
             </p>
           </div>
           <hr />
-          <p className="attribution">
+          <div className="attribution">
             <img alt="" src={CreatorImage} />
-            Creation of <a href="#">Jules Wyvern</a>
-          </p>
+            <p>
+              Creation of <a href="#">Jules Wyvern</a>
+            </p>
+          </div>
         </div>
       </div>
     </>

@@ -3,14 +3,31 @@
 .Card {
   display: flex;
   flex-direction: column;
-  width: clamp(300px, 330px, 100dvw);
+  width: clamp(300px, 350px, 100dvw);
   background: $clr-bg-card;
   padding: 1.5rem;
   border-radius: 15px;
   gap: 1.25rem;
 
-  img {
+  .image-preview {
+    background: url("../assets/images/image-equilibrium.jpg") 100%/100%;
     border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparentize($clr-p-cyan, $amount: 0.5);
+      background-image: url("../assets/images/icon-view.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
@@ -18,12 +35,13 @@
   display: flex;
   flex-direction: column;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
   gap: 0.75rem;
   line-height: 1.75;
 
-  h3 {
+  > a {
     font-size: 1.3rem;
+    font-weight: 600;
   }
 }
 
@@ -61,6 +79,9 @@ hr {
   align-items: center;
   white-space: nowrap;
   font-size: 1rem;
+  font-weight: 500;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 
   img {
     height: 2.2rem;
@@ -69,6 +90,10 @@ hr {
   }
 
   a {
-    margin-inline: 0.35rem;
+    margin-inline: 0.25rem;
   }
+}
+
+a:hover {
+  color: $clr-p-cyan;
 }
